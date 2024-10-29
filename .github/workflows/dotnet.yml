@@ -33,6 +33,6 @@ jobs:
         image: 0258456/nur
         tags: v1, latest
         registry: docker.io
-        username: 0258456
+        username: makichyantigran@gmail.com
         password: Rex0258456!@
     
