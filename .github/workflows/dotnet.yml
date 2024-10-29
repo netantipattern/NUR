@@ -26,3 +26,12 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - uses: mr-smithers-excellent/docker-build-push@v3
+    - name: Build & push Docker image
+      with:
+        image: 0258456/nur
+        tags: v1, latest
+        registry: docker.io
+        username: 0258456
+        password: Rex0258456!@
+    
